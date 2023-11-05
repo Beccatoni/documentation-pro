@@ -1,0 +1,151 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family:'Open Sans', Arial, sans-serif;
+}
+
+
+body {
+    display: flex;
+    line-height: 2;
+}
+
+header {
+    font-weight: 400;
+    text-align: left;
+    color: #1d1b1b;
+    font-size: 28px;
+}
+
+/* Style the navbar */
+#navbar {
+    color: rgb(122, 113, 113); 
+    width: 290px;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    border-right: 2px  solid  #c7c0c0;
+    margin: auto;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    color: #49494c;
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+
+
+
+
+/*  the main content */
+main {
+    margin-left: 320px;
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;  
+   
+}
+
+
+/* Style headings and paragraphs */
+h1 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #1d1b1b;
+}
+
+p {
+    line-height: 2;
+}
+
+/* Style code blocks */
+code {
+    background-color: #f2f2f2;
+    padding: 2px 5px;
+    border: 1px solid #ccc;
+    font-family: monospace;
+}
+
+/* Add some spacing and borders */
+.section {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Style the footer */
+footer {
+    color: black;
+    padding: 10px;
+}
+
+footer >ul  a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 400px) {
+    main {
+      margin-left: -10px;
+    }
+  
+    code {
+      margin-left: -20px;
+      width: 100%;
+      padding: 15px;
+      padding-left: 10px;
+      padding-right: 45px;
+      min-width: 233px;
+    }
+  }
+
+  @media only screen and (max-width: 815px) { 
+   
+    nav > ul {
+      border: 1px solid;
+      height: 207px;
+    }
+  
+    #navbar {
+      background-color: white;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+      overflow: scroll;
+    }
+
+    #navbar ul li {
+        margin-left: 0px;
+    }
+
+  
+    main {
+      position: relative;
+      margin-left: 20px;
+      margin-top: 270px;
+    }
+  }
